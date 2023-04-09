@@ -1,12 +1,12 @@
 # Udacity Azure Dev-Ops Project 1: Deploying a Web Server in Azure
 
 This is a project related to Udacity Azure DevOps nanodegree.
-It aims at deploying a policy, an image from a Packer template that will be used by Terraform.
+In this project, you will write a Packer template and a Terraform template to deploy a customizable, scalable web server in Azure
 
 ## Dependencies
 
 - Create an [Azure Account](https://portal.azure.com) 
-- Install the [Azure command line interface](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+- Install the [Azure command line interface (Azure CLI )](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 - Install [Packer](https://www.packer.io/downloads)
 - Install [Terraform](https://www.terraform.io/downloads.html)
 
@@ -34,23 +34,19 @@ Deploy the policy (I did it on the Portal) and assign it to the resource group.
 ```
 $ packer build packer/server.json
 ```
-![Parker_image_build](./udacity_project1/Image/packer_build.png)
-### Implement code
-  - Create a file ```main.tf``` to create
-  - Create a file ```vars.tf``` to contain the variables
- 
+![Parker_image_build](./Image/packer_build.png)
 ### Initialize Terraform deployment
 
 ```
 $ terraform init
 ```
-![terrform_init](./udacity_project1/Image/tarraform_init.png)
+![terrform_init](./Image/tarraform_init.png)
 ### Terraform execution plan
 - Terraform plan command creates plan
 ```
 $ terraform plan -out solution.plan
 ```
-![terrform_plan_out](./udacity_project1/Image/terraform_plan_out.png)
+![terrform_plan_out](./Image/terraform_plan_out.png)
 ### Deploy with Terraform
 
 ```
@@ -65,7 +61,7 @@ Destroy the infrastructure with:
 $ terraform deploy
 ```
 Terraform will perform:
-![terraform out put](./udacity_project1/Image/output.png)
+![terraform out put](./Image/output.png)
 
 ## Modify
 
