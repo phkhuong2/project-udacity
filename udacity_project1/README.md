@@ -1,7 +1,15 @@
 # Udacity Azure Dev-Ops Project 1: Deploying a Web Server in Azure
 
+## Introduction
 This is a project related to Udacity Azure DevOps nanodegree.
 In this project, you will write a Packer template and a Terraform template to deploy a customizable, scalable web server in Azure
+
+## Getting Started
+1. Clone this repository
+
+2. Create your infrastructure as code
+
+3. Update this README to reflect how someone would use your code.
 
 ## Dependencies
 
