@@ -27,7 +27,7 @@ export AZ_SUSCRIPTION_ID=00000000-0000-0000-0000-000000000000
 
 ### Deploy the policy
 
-Deploy the policy (I did it on the Portal) and assign it to the resource group.
+Deploy the policy (I did it on Azure Portal) and assign it to the resource group.
 
 ### Create the Packer image
 
