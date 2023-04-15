@@ -60,6 +60,15 @@ $ terraform plan -out solution.plan
 ```
 $ terraform apply "solution.plan"
 ```
+## How to customize vars.tf
+
+Ex: If you want to deploy on other servers, you need to change values default in vars.tf file
+```
+  variable "server_names"{
+  type = list
+  default = ["<Server_1>","Server_2"]
+}
+```
 
 ## After
 
@@ -71,6 +80,4 @@ $ terraform deploy
 Terraform will perform:
 ![terraform out put](./Image/output.png)
 
-## Modify
 
-The file `terraform/vars.tf` contains all the variables used inside the `terraform/main.tf`. If you want to personnalize the code, it is likely those values you want to modify first.
